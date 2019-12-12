@@ -44,26 +44,17 @@
         <a class="navbar-brand" href="{{site.github.url}}/index.html">{{site.name}}</a>
       </div>
       <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-        <ul class="nav navbar-nav">
-        {% if site.customNavBar %}
-          {% include navbar.html %}
-        {% else %}
-          {% assign sorted_pages = site.pages | sort:"name" %}
-          {% for p in sorted_pages %}
-            {% if p.isHome != true and p.hide != true and p.title != '' %}
+        <ul class="nav navbar-nav">{% if site.customNavBar %}{% include navbar.html %}{% else %}{% assign sorted_pages = site.pages | sort:"name" %}{% for p in sorted_pages %}{% if p.isHome != true and p.hide != true and p.title != '' %}
             <li {% if page.title == p.title %}class="active"{% endif %}>
               <a href="{{site.github.url}}{{p.url}}">{{p.title}}<h6><small>{{p.description}}</small></h6></a>
-            </li>
-            {% endif %}
-          {% endfor %}
-        {% endif %}
+            </li>{% endif %}{% endfor %}{% endif %}
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          {% for p in site.headerLinks %}
+            {% for p in site.headerLinks %}
           <li>
             <a href="{{p.url}}">{{p.title}}</a>
           </li>
-          {% endfor %}
+            {% endfor %}
         </ul>
       </nav>
     </div>
