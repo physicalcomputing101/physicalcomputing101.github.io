@@ -4,33 +4,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>{{site.name}}</title>
+  <title>{{site.title}}</title>
 
   {% if site.favicon %}
   <link rel="icon" type="{% if site.favicon == 'png' %}image/png{% else %}image/x-icon{% endif %}" href="{{site.github.url}}/favicon.{{site.favicon}}"/>
   {% endif %}
-
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
-
   <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-  <link href="{{site.github.url}}/assets/css/docs.min.css" rel="stylesheet">
-  <link href="{{site.github.url}}/assets/css/style.css" rel="stylesheet">
-
+  <!-- <link href="{{site.github.url}}/assets/css/docs.min.css" rel="stylesheet"> -->
+  <!-- <link href="{{site.github.url}}/assets/css/style.css" rel="stylesheet"> -->
   <style>
     #content {
       background:{{site.header.color1}};
       background:linear-gradient(135deg, {{site.header.color1}}, {{site.header.color2}});
     }
   </style>
-
   <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.3.0/bootbox.min.js"></script>
-  <script src="{{site.github.url}}/assets/js/docs.min.js"></script>
-  <script src="{{site.github.url}}/assets/js/script.js"></script>
+  <!-- <script src="{{site.github.url}}/assets/js/docs.min.js"></script>
+  <script src="{{site.github.url}}/assets/js/script.js"></script> -->
 </head>
 
 <body>
@@ -38,7 +34,7 @@
   =========================================== -->
   <header class="navbar navbar-static-top bs-docs-nav" id="top">
     <div class="container">
-      <div class="navbar-header" role="banner">
+      <!-- <div class="navbar-header" role="banner">
         <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
@@ -46,7 +42,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="{{site.github.url}}/index.html">{{site.name}}</a>
-      </div>
+      </div> -->
       <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
         <ul class="nav navbar-nav">
         {% if site.customNavBar %}
@@ -56,7 +52,7 @@
           {% for p in sorted_pages %}
             {% if p.isHome != true and p.hide != true and p.title != '' %}
             <li {% if page.title == p.title %}class="active"{% endif %}>
-              <a href="{{site.github.url}}{{p.url}}">{{p.title}}</a>
+              <a href="{{site.github.url}}{{p.url}}">{{p.title}}<h6><small>{{p.description}}</small></h6></a>
             </li>
             {% endif %}
           {% endfor %}
@@ -76,7 +72,7 @@
 
   <!-- Header
   =========================================== -->
-  {% if page.isHome %}
+  <!-- {% if page.isHome %}
   <div class="bs-docs-masthead" id="content">
     <div class="container">
       <h1 class="home-title">{{site.name}}</h1>
@@ -105,19 +101,19 @@
       <p>{{page.description}}</p>
     </div>
   </div>
-  {% endif %}
+  {% endif %} -->
 
   <div class="container bs-docs-container">
     <div class="row">
       <!-- Content
       =========================================== -->
-      <div class="col-md-9" role="main">
+      <!-- <div class="col-md-9" role="main"> -->
         {{content}}
-      </div>
+      <!-- </div> -->
 
       <!-- Page navigation
       =========================================== -->
-      <div class="col-md-3" role="complementary">
+      <!-- <div class="col-md-3" role="complementary">
         <div class="bs-docs-sidebar hidden-print">
           <ul class="nav bs-docs-sidenav">
           </ul>
@@ -125,7 +121,7 @@
             <i class="glyphicon glyphicon-chevron-up"></i> Back to top
           </a>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 
@@ -167,7 +163,7 @@
         </ul>
       </div>
 
-      <p>
+      <!-- <p>
         Licensed under <a href="{{site.licenseUrl}}" target="_blank">{{site.license}}</a>,
         documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
       </p>
@@ -182,7 +178,7 @@
         <li>&middot;</li>
         <li><a href="{{l.url}}">{{l.title}}</a></li>
       {% endfor %}
-      </ul>
+      </ul> -->
     </div>
   </footer>
 
