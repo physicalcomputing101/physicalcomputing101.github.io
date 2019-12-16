@@ -12,7 +12,8 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
-  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- <link href="/assets/css/docs.min.css" rel="stylesheet"> -->
   <!-- <link href="/assets/css/style.css" rel="stylesheet"> -->
   <style>
@@ -21,75 +22,79 @@
       background:linear-gradient(135deg, , );
     }
   </style>
-  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.3.0/bootbox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.3.0/bootbox.min.js"></script> -->
   <!-- <script src="/assets/js/docs.min.js"></script>
   <script src="/assets/js/script.js"></script> -->
 </head>
 
-<body>
+<body style="padding-top: 80px">
   <!-- Main navigation
   =========================================== -->
   <!-- <header class="navbar navbar-static-top bs-docs-nav" id="top"> -->
-<div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="container">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <span class="d-block d-lg-none float-left" href="#">Physical Computing 101</span>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="nav navbar-nav">
-            <li class="active" >
-              <a href="/module0.html">
-                <!--Module 0-->
-                <h6><small>Physical Computing</small></h6>
-              </a>
-            </li>
-            <li >
-              <a href="/module1.html">
-                <!--Module 1-->
-                <h6><small>Sensing Signals</small></h6>
-              </a>
-            </li>
-            <li >
-              <a href="/module2.html">
-                <!--Module 2-->
-                <h6><small>Controlling Signals</small></h6>
-              </a>
-            </li>
-            <li >
-              <a href="/module3.html">
-                <!--Module 3-->
-                <h6><small>Programming the Brain</small></h6>
-              </a>
-            </li>
-            <li >
-              <a href="/module4.html">
-                <!--Module 4-->
-                <h6><small>Making an artifact!</small></h6>
-              </a>
-            </li>
-            <li >
-              <a href="/module5.html">
-                <!--Module 5-->
-                <h6><small>Storing Signals</small></h6>
-              </a>
-            </li>
-            <li >
-              <a href="/module6.html">
-                <!--Module 6-->
-                <h6><small>Visualizing Signals</small></h6>
-              </a>
-            </li>
-          </ul>
-          <!-- <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav">
+          <li class="nav-item active ">
+            <a class="nav-link" href="/module0.html">
+              <!--Module 0-->
+              <h6><small>Physical Computing</small></h6>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/module1.html">
+              <!--Module 1-->
+              <h6><small>Sensing Signals</small></h6>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/module2.html">
+              <!--Module 2-->
+              <h6><small>Controlling Signals</small></h6>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/module3.html">
+              <!--Module 3-->
+              <h6><small>Programming the Brain</small></h6>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/module4.html">
+              <!--Module 4-->
+              <h6><small>Making an artifact!</small></h6>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/module5.html">
+              <!--Module 5-->
+              <h6><small>Storing Signals</small></h6>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/module6.html">
+              <!--Module 6-->
+              <h6><small>Visualizing Signals</small></h6>
+            </a>
+          </li>
+        </ul>
+        <!-- <ul class="nav navbar-nav navbar-right">
             
         </ul> -->
-        </div>
-    </nav>
-</div>
-    <!-- <div class="container">
+      </div>
+    </div>
+  </nav>
+  <!-- <div class="container">
       <div class="navbar-header" role="banner">
         <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
