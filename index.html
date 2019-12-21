@@ -6,34 +6,104 @@ isHome: true
 ---
 
 <section class="bs-docs-section">
-  <h1 id="overview" class="page-header">Overview</h1>
+  <h1 id="intro" class="page-header">Welcome to Physical Computing 101</h1>
+  <p>To get started working with Physical Computing requires knowledge about three distinct fields (electronics, programming and making). And in this world of the Internet, it is not difficult to find resources for each of these fields. However, how do you know if a resource is of good quality or a waste of time? On this site we try to touch on all the relevant aspects of Physical Computing.</p>
+</section>
 
-  <blockquote>
-    This is a Jekyll template I use for my GitHub projects documentations. It is heavily based on official Bootstrap
-    documentation and is designed to be quickly deployed.
-  </blockquote>
-
-  <h3 id="features">Features</h3>
-
-  <ul>
-    <li>Responsive Bootstrap theme</li>
-    <li>Automatic syntax highlight</li>
-    <li>Multi-page</li>
-    <li>Automatic menu</li>
-    <li>Automatic heading anchors</li>
-    <li>Configurable additional links</li>
-    <li>Github counters</li>
-    <li>Twitter &amp; Facebook buttons</li>
-    <li>Download options popup</li>
-    <li>Changelog page generated from GitHub releases</li>
-  </ul>
-
-  <h3 id="examples">Examples</h3>
+<section class="bs-docs-section">
+  <h1 id="modules">The Modules</h1>
+  <p>This site consists of a number of modules that each describe different parts of Physical Computing.</p>
 
   <ul>
-    <li><a href="http://photo-sphere-viewer.js.org">Photo Sphere Viewer</a></li>
-    <li><a href="http://querybuilder.js.org">jQuery QueryBuilder</a></li>
-    <li><a href="http://bootstrap-confirmation.js.org">Bootstrap Confirmation</a></li>
-    <li><a href="http://mistic100.github.io/angular-smilies">AngularJS Smilies</a></li>
+    <li><p><i>Physical computing:</i> What is physical computing and why is it relevant today? What is required to start working with physical computing, examples of physical computing and the history of physical computing.</p></li>
+
+    <li><p><i>Sensing Signals:</i> How does microcontrollers sense signals? To understand that requires understanding the basics of electricity, Ohm's and Kirchhoff's law. Furthermore an understanding of some of the most basic electronics components is required such as resistors, capacitors and diodes.
+      <!-- - electricity basics - the listening metaphor
+          - static, frequency, noise,
+      - types of signals and types of waves
+          - shape of waves, converting waves
+          - Light sound - how does an LED work, and a Buzzer, or a vibro motor
+          - How can certain resistors also be sensors? (They sense differences in resistance).
+          - Analog/Digital
+          - How to "listen" to analog signals and convert the to digital representations
+      - Ohms law, Kirchhoff's law
+      - history of different types of "signal" interpreters. How signals were read by machines/tools/nature early on.  -->
+    </p></li>
+
+    <li><p><i>Controlling Signals:</i> In order for a microcontroller to actually do something, it has to control the electricty in a circuit. This module explains how to
+      <!-- - Introduction to circuits as a way of controlling flow of electricity (the water metaphor).
+    - Conductive materials - how electricity is conducted.
+    - supplying power to a circuit, resistance, parallel circuits, grounding, storing energy in the circuit
+
+- Introduction to micro controller (the controller and interpreter) Brain Metaphor
+- Interpretation, conversion, communication.
+- "code" as instructions that program how signals are registered and interpreted.
+- History of micro-controllers/programming as a physical/embodied practice  -->
+</p></li>
+    <li><p><i>Proramming the Brain:</i> What is programming? How do we tell the brain what to do? And how can we use this to control what happens in physical computing?
+    <!-- - Source Code - google translate metaphor
+    - Program Flow - line by line like reading a book
+- Programming basics
+    - Syntax
+    - Variables and types - infant toy (block, peg and star into the correct holes) metaphor
+    - Mathematical Operators - no metaphor, it's just math
+    - Arrays and strings
+    - Scope, Conditionals, Loops and Functions - used to redirect or control the line by line flow of code
+        - ("programming" a micro-controller to read input and produce output I/O
+        - delay, trigger,
+- history of programming
+    - programming languages -->
+  </p></li>
+    <li><p><i>Making an artifact:</i> Protoyping Electronics
+    <!-- - breadboard, perfboard vs pcb
+    - soldering
+    - soldering perfboard
+    - designing pcb's
+        - fabricating pcb's (acsid bath, milling)
+        - ordering prototype pcb's from fab houses (design rules to take into account)
+- Prototyping artifacts
+    - wood working, cloth and sewing, paper and cardboard making
+- Lasercutting
+    - explain technicals for lasercutting, e.g. kerf, laser strength vs material and so on
+    - designing for lasercutting
+        - boxes (https://en.makercase.com/)
+    - using a lasercutter
+    - type of materials and their (dis)advantages
+- 3D printing
+    - what is 3d printing
+    - types of 3d printing
+    - how to model for 3d printing
+        - parametric vs non-parametric
+        - software for modeling -->
+      </p></li>
+    <li><p><i>Storing Signals:</i></p></li>
+    <li><p><i>Visualizing Signals:</i></p></li>
   </ul>
 </section>
+
+
+<section class="bs-docs-section">
+  <h1 id="howtohelp" class="page-header">How can you help?</h1>
+  <p>As this site is meant for all to use, students and teachers alike, we've chosen to host it on GitHub because it is easy to report issues with the site if some information is either not correct or explained properly. Any such issues can be reported <a href="https://github.com/physicalcomputing101/physicalcomputing101.github.io/issues" target="_blank">here</a> and if we agree with the issue we will fix it.</p>
+</section>
+
+<section class="bs-docs-section">
+  <h1 id="authors" class="page-header">Site Authors</h1>
+</section>
+
+<section class="bs-docs-section mb-4">
+  <img src="{{site.github.url}}/assets/author_walther.jpg" class="rounded float-right ml-4" style="width: 160px"/>
+  <h4>Walther Jensen</h4>
+  <p>I am a PhD Fellow at Aalborg University, Denmark, studying electrochromic displays and their application cases. Through my time at Aalborg University I've taught electronics and programming to Art and Technology and Industrial Design bachelor students. I have previously worked with interactive art installations, vibrotactile vests and drone - human interaction. Through the years I've hacked, build and developed different interactive artifacts and build a couple of 3D printers to help me along the way.</p>
+</section>
+
+<section class="bs-docs-section mb-4">
+  <img src="{{site.github.url}}/assets/author_patrycja.jpg" class="rounded float-right ml-4" style="width: 160px"/>
+  <h4>Patrycja Zdziarska</h4>
+  <p>  {% include lorem.html %}</p>
+</section>
+
+
+<!-- <section class="bs-docs-section">
+  <h1 id="overview" class="page-header">Welcome to Physical Computing 101</h1>
+</section> -->
